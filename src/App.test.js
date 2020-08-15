@@ -13,3 +13,9 @@ test('renders hello piaic text', () => {
     const linkElement = getByText(/hello piaic/i);
     expect(linkElement).toBeInTheDocument();
 });
+
+test('renders hello sir text', () => {
+    const { getByText } = render( < App / > );
+    const linkElement = getByText(/hello sir/i);
+    expect(linkElement).toBeInTheDocument();
+});
